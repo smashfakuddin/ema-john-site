@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import fakeData from '../../../fakeData';
+import fakeData from '../../fakeData';
 
 
 const Shop = () => {
