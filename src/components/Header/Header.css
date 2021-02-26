@@ -1,5 +1,6 @@
 .header img{
     height: 80px;
+    cursor: pointer;
 }
 .header{
     text-align: center;
