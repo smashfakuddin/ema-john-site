@@ -1,9 +1,12 @@
 import React from 'react';
+
 import './Cart.css'
 
 const Cart = (props) => {
     const cart = props.cart;
-    const totalPrice = cart.reduce((total, prd) => total + prd.price, 0);
+    const totalPrice = cart.reduce((total, product) => total + product.price *product.quantity  , 0);
+ 
+    
 
     let shipping = 0;
     if (totalPrice > 35) {
@@ -24,8 +27,11 @@ const Cart = (props) => {
             <p><small>Shipping Cost: {shipping}</small></p>
             <p><small>Tax + Vat :{tax}</small></p>
             <p>Total price: {grandTotal}</p>
-            <button className="main-button">Order now</button>
-            <h5>Order Summary: {cart.length}</h5>
+            {
+                props.children
+            }
+            
+            
         </div>
     );
 };

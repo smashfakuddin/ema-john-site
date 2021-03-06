@@ -1,0 +1,14 @@
+.product-name{
+    font-size: 15px;
+}
+.review-cart{
+    margin-bottom: 25px;
+    margin-left: 75px;
+    padding: 5px;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+p{
+    font-size: 18px;
+    margin-left: 15px;
+}
